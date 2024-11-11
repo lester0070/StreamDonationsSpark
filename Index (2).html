@@ -106,7 +106,7 @@
 <body>
     <div class="container" id="donation-form">
         <!-- Logo Section -->
-        <img src="C:\Users\LESTER\Downloads\spark logo.png" alt="Logo" class="logo">
+        <img src="https://github.com/lester0070/StreamDonationsSpark/blob/main/spark%20logo.png?raw=true" alt="Logo" class="logo">
 
         <h1>Support My Stream</h1>
         <p>Thank you for supporting my Stream! Please enter your name and message to personalize the donation.</p>
@@ -164,14 +164,14 @@
             let message = document.getElementById('donor-message').value.trim();
 
             // Open the UPI payment app (this could open a link to the UPI app)
-            window.location.href = `upi://pay?pa=your-upi-id@bank&pn=YourName&cu=INR&tn=Donation%20from%20${encodeURIComponent(name)}%20Message:%20${encodeURIComponent(message)}`;
+            window.location.href = `upi://pay?pa=lesterpereira88@oksbi&pn=LesterPereira&cu=INR&tn=Donation%20from%20${encodeURIComponent(name)}%20Message:%20${encodeURIComponent(message)}`;
 
             // Hide donation form and show the Thank You message after 10 seconds
             setTimeout(() => {
                 document.getElementById('donation-form').style.display = 'none';
                 document.getElementById('thank-you-container').style.display = 'block';
                 document.getElementById('thank-you-message').textContent = `Thank you, ${name}, for your generous donation!`;
-            }, 10000); // 10 seconds delay
+            }, 5000); // 10 seconds delay
         }
     </script>
 </body>
